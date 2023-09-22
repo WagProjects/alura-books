@@ -1,0 +1,85 @@
+.topicos{
+    padding-top: 1em;
+    background: var(--branco);
+}
+
+.topicos__banner{
+    background: var(--azul);
+    text-align: center;
+    padding: 1em 0;
+}
+
+.topicos__titulo{
+    text-transform: uppercase;
+    color: var(--branco);
+    font-weight: 300;
+    font-size: 16px;
+    margin: 1em;
+}
+
+.topicos__lista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.topicos__item{
+    margin: 1.5em 0.2em;
+}
+
+.topicos__link{
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--branco);
+    background: var(--laranja);
+    padding: 1em;
+    margin: 0.5em;
+}
+
+.email{
+    padding: 1em;
+}
+
+.email__titulo{
+    background: var(--azul);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.email__descricao{
+    color: #002F52;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 1em 0;
+}
+
+.email__cadastro{
+    padding: 10px 24px 10px 24px;
+    border: 1px solid #002F52;
+    border-radius: 24px;
+    color: #002F52;
+    width: 80vw;
+}
+
+.email__cadastro::placeholder{
+    font-family: var(--fonte-principal);
+    color: #002F52;
+    font-size: 16px;
+    font-weight: 400;
+    background: url('../imgs/Email.svg') no-repeat;
+    padding-left: 1.5em;
+}
+
+footer{
+    border-top: 1px solid #858585;
+    padding: 1em;
+}
+
+.footer__creditos{
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+}

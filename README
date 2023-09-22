@@ -1,3 +1,3 @@
 Projeto alura books responsivo usando mobile-first.
 Nesse projeto foi utilizado:
-flex-items;import de fontes; menu sanduiche; carrossel com swiperJs;
+flex-items;import de fontes; menu sanduiche; carrossel com plugin externo, swiperJS, através de CDN;
