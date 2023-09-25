@@ -6,6 +6,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+    z-index: 2;
 }
 
 .cabecalho__menu-hamburguer{
@@ -57,4 +58,93 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-transform: uppercase;
+}
+
+/* ELEMENTOS TABLET */
+
+.container__titulo, .opcoes{
+    display: none;
+}
+
+@media screen and (min-width: 1024px){
+    /*ELEMENTOS QUE DEVEM SUMIR*/
+    .cabecalho__menu-hamburguer, .container__imagem--favorito{
+        display: none;
+    }
+
+    /*ELEMENTOS QUE DEVEM APARECER*/
+    .container__titulo, .container__titulo--negrito{
+        font-family: var(--fonte-secundaria);
+        font-size: 30px;
+    }
+    .container__titulo{
+        font-weight: 300;
+        display: block;
+    }
+    .container__titulo--negrito{
+        font-weight: 700;
+    }
+
+    /*OPCOES DO TABLET*/
+
+    .opcoes{
+        display: block;
+        font-family: var(--fonte-principal);
+        font-size: 16px;
+        font-weight: 400;
+        display: flex;
+    }
+    
+    .opcoes__item{
+        text-transform: uppercase;
+        color: #000;
+        padding: 0 2em;
+    }
+    
+    .opcoes__item a{
+        text-decoration: none;
+        color: #000;
+    }
+
+    .opcoes__label:hover, .opcoes__item:hover{
+        color: var(--branco);
+        background: var(--azul);
+    }
+
+    .opcoes__item a:hover{
+        color: var(--branco);
+    }
+
+    .opcoes__item{
+        padding: 1em;
+    }
+
+    .opcoes__lista li{
+        padding: 1.2em 2em;
+        text-transform: uppercase;
+        
+    }
+
+    .opcoes__lista li:hover{
+        background: var(--azul);
+        color: var(--branco);
+    }
+
+    .opcoes__botao, .opcoes__lista{
+        display: none;
+    }
+
+    .opcoes__botao:checked ~ .opcoes__lista{
+        display: block;
+    }
+
+    .opcoes__lista{
+        background: var(--branco);
+        position: absolute;
+        top: 100%;
+    }
+
+    .container__imagem--compras, .container__imagem--perfil{
+        margin-right: 3em;
+    }
 }

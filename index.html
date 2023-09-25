@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="reset.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Josefin+Sans:wght@400;700&family=Montserrat:wght@100&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@100&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
         
@@ -38,11 +39,27 @@
                     </li>
                 </ul>
                 <img src="./imgs/Polygon 1 (Stroke).svg" class="container__imagem" alt="Logo">
+                <h1 class="container__titulo"><b class="container__titulo--negrito">Alura</b>Books</h1>
             </div>
+            <ul class="opcoes">
+                <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
+                <label for="opcoes-menu" class="opcoes__label">
+                    <li class="opcoes__item">Categorias</a></li>
+                </label>
+                <ul class="opcoes__lista">
+                    <li>Programação</li>
+                    <li>Front-end</li>
+                    <li>Infraestrutura</li>
+                    <li>Business</li>
+                    <li>Design UX</li>
+                </ul>
+                <li class="opcoes__item"><a href="#">Favoritos</a></li>
+                <li class="opcoes__item"><a href="#">Minha Estante</a></li>
+            </ul>
             <div class="container">
-                <a href="#"><img src="./imgs/Favoritos.svg" alt="Favoritos"></a>
-                <a href="#"><img src="./imgs/Compras.svg" alt="Compras"></a>
-                <a href="#"><img src="./imgs/Usuário.svg" alt="Perfil"></a>
+                <a href="#"><img class="container__imagem--favorito" src="./imgs/Favoritos.svg" alt="Favoritos"></a>
+                <a href="#"><img class="container__imagem--compras"src="./imgs/Compras.svg" alt="Compras"></a>
+                <a href="#"><img class="container__imagem--perfil"src="./imgs/Usuário.svg" alt="Perfil"></a>
             </div>
         </header>
         <section class="banner">
@@ -51,7 +68,7 @@
             <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
         </section>
         <section class="carrossel">
-            <h2 class="carrossel__titulo">Novos lançamentos</h2>
+            <h2 class="carrossel__titulo">Últimos lançamentos</h2>
             <!-- Slider main container -->
             <div class="swiper">
                 <!-- If we need pagination -->
@@ -158,8 +175,10 @@
                 </ul>
             </section>
             <section class="email">
-                <h2 class="email__titulo">Fique por dentro das novidades!</h2>
-                <p class="email__descricao">Atualizações de e-books, novos livros, promoções e outros.</p>
+                <div class="email__div">
+                    <h2 class="email__titulo">Fique por dentro das novidades!</h2>
+                    <p class="email__descricao">Atualizações de e-books, novos livros, promoções e outros.</p>
+                </div>
                 <input type="email" placeholder="Cadastre seu e-mail" class="email__cadastro">
             </section>
         </section>
@@ -178,6 +197,10 @@
                 pagination:{
                     el: '.swiper-pagination',
                     type: 'bullets'
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
                 }
             });
         </script>

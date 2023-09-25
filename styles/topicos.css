@@ -83,3 +83,37 @@ footer{
     font-size: 16px;
     font-weight: 400;
 }
+
+@media screen and (min-width: 1024px){
+    .topicos__titulo{
+        font-size: 24px;
+        margin-bottom: 2em;
+    }
+
+    .topicos__link{
+        font-size: 24px;
+    }
+
+    .topicos__item{
+        margin: 2.5em 0.3em;
+    }
+
+    .email{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .email__div{
+        width: 30%;
+        margin: 1em;
+    }
+
+    .email__titulo{
+        font-size: 24px;
+    }
+    
+    .email__cadastro{
+        width: 30%;
+    }
+}
