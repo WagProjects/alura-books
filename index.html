@@ -58,8 +58,8 @@
             </ul>
             <div class="container">
                 <a href="#"><img class="container__imagem--favorito" src="./imgs/Favoritos.svg" alt="Favoritos"></a>
-                <a href="#"><img class="container__imagem--compras"src="./imgs/Compras.svg" alt="Compras"></a>
-                <a href="#"><img class="container__imagem--perfil"src="./imgs/Usuário.svg" alt="Perfil"></a>
+                <a href="#" class="container__link"><img class="container__imagem--compras"src="./imgs/Compras.svg" alt="Compras"><p>Minha sacola</p></a>
+                <a href="#" class="container__link"><img class="container__imagem--perfil"src="./imgs/Usuário.svg" alt="Perfil"><p>Meu perfil</p></a>
             </div>
         </header>
         <section class="banner">
@@ -69,94 +69,99 @@
         </section>
         <section class="carrossel">
             <h2 class="carrossel__titulo">Últimos lançamentos</h2>
-            <!-- Slider main container -->
-            <div class="swiper">
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide"><img src="./imgs/Guia Front-end.svg" alt="Guia Front-end"></div>
-                    <div class="swiper-slide"><img src="./imgs/Javascript.svg" alt="JavaScript"></div>
-                    <div class="swiper-slide"><img src="./imgs/Nodejs.svg" alt="NodeJs"></div>
-                    <div class="swiper-slide"><img src="./imgs/ReactNative.svg" alt="ReactNative"></div>
-                    <div class="swiper-slide"><img src="./imgs/UX.svg" alt="UX"></div>
-                    <div class="swiper-slide"><img src="./imgs/Construct2.svg" alt=""></div>
-                    <div class="swiper-slide"><img src="./imgs/MetricasAgeis.svg" alt=""></div>
-                    <div class="swiper-slide"><img src="./imgs/Gestão.svg" alt=""></div>
-                    <div class="swiper-slide"><img src="./imgs/Gestão2.svg" alt=""></div>
-                    <div class="swiper-slide"><img src="./imgs/MEAN.svg" alt=""></div>
-                    <div class="swiper-slide"><img src="./imgs/Acessibilidade.svg" alt=""></div>
-                
-                </div>
-            
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            
-                <!-- If we need scrollbar 
-                <div class="swiper-scrollbar"></div>-->
-            </div>
-
-            <div class="card">
-                <div class="card__descricao">
-                    <div class="descricao">
-                        <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
-                        <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
-                        <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+            <div class="carrossel__central">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+    
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="./imgs/ReactNative.svg" alt="ReactNative"></div>
+                        <div class="swiper-slide"><img src="./imgs/UX.svg" alt="UX"></div>
+                        <div class="swiper-slide"><img src="./imgs/Construct2.svg" alt=""></div>
+                        <div class="swiper-slide"><img src="./imgs/Guia Front-end.svg" alt="Guia Front-end"></div>
+                        <div class="swiper-slide"><img src="./imgs/Javascript.svg" alt="JavaScript"></div>
+                        <div class="swiper-slide"><img src="./imgs/Nodejs.svg" alt="NodeJs"></div>
+                        <div class="swiper-slide"><img src="./imgs/MetricasAgeis.svg" alt=""></div>
+                        <div class="swiper-slide"><img src="./imgs/Gestão.svg" alt=""></div>
+                        <div class="swiper-slide"><img src="./imgs/Gestão2.svg" alt=""></div>
+                        <div class="swiper-slide"><img src="./imgs/MEAN.svg" alt=""></div>
+                        <div class="swiper-slide"><img src="./imgs/Acessibilidade.svg" alt=""></div>
+                    
                     </div>
-                    <img src="./imgs/Angular.svg" alt="Angular">
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                
+                    <!-- If we need scrollbar 
+                    <div class="swiper-scrollbar"></div>-->
                 </div>
-                <div class="card__botoes">
-                    <ul class="botoes">
-                        <li class="botoes__item"><img src="./imgs/Favoritos.svg" alt="Favorito"></li>
-                        <li class="botoes__item"><img src="./imgs/Compras.svg" alt="Sacola"></li>
-                    </ul>
-                    <a href="#" class="botoes__ancora">Saiba mais</a>
+    
+                <div class="card">
+                    <div class="card__descricao">
+                        <div class="descricao">
+                            <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+                            <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
+                            <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                        </div>
+                        <img class="card__img" src="./imgs/Angular.svg" alt="Angular">
+                    </div>
+                    <div class="card__botoes">
+                        <ul class="botoes">
+                            <li class="botoes__item"><img src="./imgs/Favoritos.svg" alt="Favorito"></li>
+                            <li class="botoes__item"><img src="./imgs/Compras.svg" alt="Sacola"></li>
+                        </ul>
+                        <a href="#" class="botoes__ancora">Saiba mais</a>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="carrossel">
             <h2 class="carrossel__titulo">Mais vendidos</h2>
-            <!-- Slider main container -->
-            <div class="swiper">
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide"><img src="./imgs/Guia Front-end.svg" alt="Guia Front-end"></div>
-                    <div class="swiper-slide"><img src="./imgs/Javascript.svg" alt="JavaScript"></div>
-                    <div class="swiper-slide"><img src="./imgs/Nodejs.svg" alt="NodeJs"></div>
-                    <div class="swiper-slide"><img src="./imgs/ReactNative.svg" alt="NodeJs"></div>
-                    <div class="swiper-slide"><img src="./imgs/UX.svg" alt="NodeJs"></div>
-                </div>
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
             
-                <!-- If we need scrollbar 
-                <div class="swiper-scrollbar"></div>-->
-            </div>
-
-            <div class="card">
-                <div class="card__descricao">
-                    <div class="descricao">
-                        <img src="./imgs/Estrelinhas.svg" alt="Estrelas">
-                        <h3 class="descricao__titulo">Autora do Mês</h3>
-                        <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
-                        <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+            <div class="carrossel__central">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+    
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="./imgs/Guia Front-end.svg" alt="Guia Front-end"></div>
+                        <div class="swiper-slide"><img src="./imgs/Javascript.svg" alt="JavaScript"></div>
+                        <div class="swiper-slide"><img src="./imgs/Nodejs.svg" alt="NodeJs"></div>
+                        <div class="swiper-slide"><img src="./imgs/ReactNative.svg" alt="NodeJs"></div>
+                        <div class="swiper-slide"><img src="./imgs/UX.svg" alt="NodeJs"></div>
                     </div>
-                    <img src="./imgs/Perfil-escritora 1.png" alt="Angular">
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                
+                    <!-- If we need scrollbar 
+                    <div class="swiper-scrollbar"></div>-->
                 </div>
-                <div class="card__botoes">
-                    <ul class="botoes">
-                        <li class="botoes__item"><img src="./imgs/Favoritos.svg" alt="Favorito"></li>
-                        <li class="botoes__item"><img src="./imgs/Compras.svg" alt="Sacola"></li>
-                    </ul>
-                    <a href="#" class="botoes__ancora">Saiba mais</a>
+    
+                <div class="card">
+                    <div class="card__descricao">
+                        <div class="descricao">
+                            <img src="./imgs/Estrelinhas.svg" alt="Estrelas">
+                            <h3 class="descricao__titulo">Autora do Mês</h3>
+                            <h2 class="descricao__titulo-livro">Juliana Agarikov</h2>
+                            <p class="descricao__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
+                        </div>
+                        <img class="card__img" src="./imgs/Perfil-escritora 1.png" alt="Escritora">
+                    </div>
+                    <div class="card__botoes">
+                        <ul class="botoes">
+                            <li class="botoes__item"><img src="./imgs/Favoritos.svg" alt="Favorito"></li>
+                            <li class="botoes__item"><img src="./imgs/Compras.svg" alt="Sacola"></li>
+                        </ul>
+                        <a href="#" class="botoes__ancora">Saiba mais</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -184,6 +189,64 @@
         </section>
         <footer>
             <p class="footer__creditos">Grupo Alura</p>
+            
+            <ul class="lista__footer">
+                <li><p>EDUCAÇÃO</p></li>
+                <li>
+                    <img src="./imgs/footer/Caelum.svg" alt="Caelum"><a href="">Caelum</a>
+                </li>
+                <li>
+                    <img src="./imgs/footer/CasaDoCodigo.svg" alt=""><a href="">Casa do Código</a>
+                </li>
+            </ul>
+            <ul class="lista__footer">
+                <li><p>EDUCAÇÃO ONLINE</p></li>
+                <li>
+                    <img src="./imgs/footer/Alura.svg" alt=""><a href="">Alura</a>
+                </li>
+                <li>
+                    <img src="./imgs/footer/AluraEmpresas.svg" alt=""><a href="">Alura Para Empresas</a>
+                </li>
+                <li>
+                    <img src="./imgs/footer/AluraLATAM.svg" alt=""><a href="">Alura LATAM</a>
+                </li>
+                <li>
+                    <img src="./imgs/footer/AluraStart.svg" alt=""><a href="">Alura Start</a>
+                </li>
+                <li>
+                    <img src="./imgs/footer/MusicDot.svg" alt=""><a href="">MusicDot</a>
+                </li>
+                <li>
+                    <img src="./imgs/footer/AluraLingua.svg" alt=""><a href="">Alura Língua</a>
+                </li>
+                <li>
+                    <img src="./imgs/footer/PM3.svg" alt=""><a href="">PM3</a>
+                </li>
+            </ul>
+            <ul class="lista__footer">
+                <li><p>COMUNIDADE</p></li>
+                <li>
+                    <img src="./imgs/footer/HipstersTech.svg" alt=""><a href="">Hipsters ponto Tech</a>
+                </li>
+                <li>
+                    <img src="./imgs/footer/ScubaDev.svg" alt=""><a href="">Scuba Dev</a>
+                </li>
+                <li>
+                    <img src="./imgs/footer/LayersTech.svg" alt=""><a href="">Layers ponto Tech</a>
+                </li>
+                <li>
+                    <img src="./imgs/footer/LikeABoss.svg" alt=""><a href="">Lika a Boss</a>
+                </li>
+                <li>
+                    <img src="./imgs/footer/CarreiraSemFronteira.svg" alt=""><a href="">Carreira sem Fronteira</a>
+                </li>
+                <li>
+                    <img src="./imgs/footer/HipstersJobs.svg" alt=""><a href="">Hipsters ponto Jobs</a>
+                </li>
+                <li>
+                    <img src="./imgs/footer/GUJ.svg" alt=""><a href="">GUJ</a>
+                </li>
+            </ul>
         </footer>
 
 
@@ -192,7 +255,7 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
         <script>
             const swiper = new Swiper('.swiper', {
-                spaceBetween: 10,
+                spaceBetween: 30,
                 slidesPerView: 3,
                 pagination:{
                     el: '.swiper-pagination',

@@ -84,6 +84,12 @@ footer{
     font-weight: 400;
 }
 
+/*NÃO DEVE APARECER EM RESOLUÇÃO MOBILE*/
+.lista__footer{
+    display: none;
+}
+
+
 @media screen and (min-width: 1024px){
     .topicos__titulo{
         font-size: 24px;
@@ -115,5 +121,73 @@ footer{
     
     .email__cadastro{
         width: 30%;
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-between;
+        
+        padding: 3em 3em;
+        font-family: var(--fonte-principal);
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .footer__creditos{
+        font-size: 24px;
+        font-weight: 400;
+    }
+    
+    .lista__footer{
+        display: block;
+    }
+
+    .lista__footer li{
+        display: flex;
+        align-items: center;
+        
+        margin-bottom: 1em;
+        color: #858585;
+    }
+    
+    .lista__footer li p{
+        margin-bottom: 1em;
+    }
+
+    .lista__footer li a{
+        text-decoration: none;
+        color: #474646;
+        padding-left: 0.5em;
+    }
+
+}
+
+@media screen and (min-width:1728px) {
+    .topicos__titulo{
+        font-size: 32px;
+    }
+
+    .topicos__banner{
+        padding: 3em 25vw;
+    }
+    
+    .email{
+        padding: 5em 10vw;
+    }
+
+    .email__cadastro{
+        padding: 20px 24px 20px 24px;
+        width: 25%;
+    }
+
+    .lista__footer{
+        border-left: 2px solid rgba(133, 133, 133, 0.5)
+        ;
+        padding-left: 1.5em;
+    }
+
+    footer{
+        padding-left: 10vw;
+        padding-right: 10vw;
     }
 }

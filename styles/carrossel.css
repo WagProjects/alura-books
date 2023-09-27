@@ -100,3 +100,44 @@
         margin: 2em auto ;
     }
 }
+
+@media screen and (min-width: 1728px) {
+    .carrossel__central{
+        display: flex;
+        padding: 2em 10em 7em 10em;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .carrossel__titulo{
+        font-size: 30px;
+    }
+
+    .swiper-pagination{
+        margin-bottom: 1em;
+    }
+
+    .swiper{
+        width: 50%;
+    }
+
+    .card{
+        width: 40%;
+    }
+
+    .descricao__titulo{
+        font-size: 32px;
+    }
+
+    .descricao__titulo-livro{
+        margin: 1em 0;
+    }
+    
+    .descricao__texto{
+        font-size: 16px;
+    }
+
+    .card__img{
+        margin-left: 4em;
+    }
+}
